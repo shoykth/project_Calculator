@@ -46,19 +46,29 @@ class _calculatorState extends State<calculator> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                ElevatedButton(onPressed: (){},
+                ElevatedButton(onPressed: (){
+                  setState(() {
+                    number.text += "7";
+                  });
+                },
                   style: buttonColor(),
                   child: Text('7'),
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    setState(() {});
+                    setState(() {
+                      number.text += "8";
+                    });
                   },
                   style: buttonColor(),
                   child: Text('8'),
                 ),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    setState(() {
+                      number.text += "9";
+                    });
+                  },
                   style: buttonColor(),
                   child: Text('9'),
                 ),
@@ -75,20 +85,29 @@ class _calculatorState extends State<calculator> {
                 ElevatedButton(
                   onPressed: () {
                     setState(() {
+                      number.text += "4";
                     });
                   },
                   style: buttonColor(),
-                  child: Text('6'),
+                  child: Text('4'),
                 ),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    setState(() {
+                      number.text += "5";
+                    });
+                  },
                   style: buttonColor(),
                   child: Text('5'),
                 ),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    setState(() {
+                      number.text += "6";
+                    });
+                  },
                   style: buttonColor(),
-                  child: Text('4'),
+                  child: Text('6'),
                 ),
                 ElevatedButton(
                   onPressed: () {},
@@ -101,17 +120,29 @@ class _calculatorState extends State<calculator> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    setState(() {
+                      number.text += "1";
+                    });
+                  },
                   style: buttonColor(),
                   child: Text('1'),
                 ),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    setState(() {
+                      number.text += "2";
+                    });
+                  },
                   style: buttonColor(),
                   child: Text('2'),
                 ),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    setState(() {
+                      number.text += "3";
+                    });
+                  },
                   style: buttonColor(),
                   child: Text('3'),
                 ),
@@ -126,7 +157,11 @@ class _calculatorState extends State<calculator> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    setState(() {
+                      number.text += "0";
+                    });
+                  },
                   style: buttonColor(),
                   child: Text('0'),
                 ),
